@@ -41,14 +41,34 @@ body {
 .nav__icon {
   display: flex;
   gap: 15px;
+  padding-right: 10px;
 }
 .nav {
   align-items: center;
   padding-bottom: 10px;
+  padding-top: 10px;
   border-bottom: solid black 1px;
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: white;
+  cursor: pointer;
+}
+.mylearning{
+  position: relative;
+}
+.mylearning__popup{
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 50px;
+  padding: 10px;
+  background-color: white;
+  border: solid black 1px;
+  display: none;
+}
+.mylearning:hover .mylearning__popup{
+  display: block;
 }
 .cat {
   display: flex;
@@ -71,10 +91,10 @@ body {
   position: absolute;
   width: 400px;
   height: 140px;
-  bottom: 300px;
+  bottom: 250px;
   left: 100px;
-  border: solid white 2px;
-  padding-bottom: 10px;
+  border: solid rgb(0, 0, 0) 2px;
+  padding: 10px;
 }
 .course-card {
   width: 100%;
@@ -82,13 +102,15 @@ body {
 }
 .image__offersale button{
  border: none;
- width: 80px;
- height: 40px;
+ width: 90px;
+ height: 30px;
+ padding-left: 5px;
+ padding-right: 5px;
  background-color: rgb(62, 65, 67);
  color: white;
  font-size: 15px;
 }
-.image__offersale p,h2{
+.image__offersale p,h2,button{
   margin-bottom: 10px;
  }
 .course-card__container {
@@ -97,6 +119,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 10px;
+}
+.course-card h1{
+  padding-left: 10px;
 }
 .course-card__img {
   width: 300px;
@@ -175,6 +200,9 @@ body {
 }
 .popular__course-info h3 {
   font-size: 22px;
+}
+.popular__title h1,p{
+  padding-left: 10px;
 }
 .popular p {
   line-height: 2;
