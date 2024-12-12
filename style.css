@@ -2,16 +2,17 @@
   margin: 0;
   padding: 0;
 }
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
 body {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   width: 100%;
+}
+/*Navigation Bar*/
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
 .nav__name img {
   width: 100px;
@@ -54,10 +55,10 @@ body {
   background-color: white;
   cursor: pointer;
 }
-.mylearning{
+.mylearning {
   position: relative;
 }
-.mylearning__popup{
+.mylearning__popup {
   position: absolute;
   width: 200px;
   right: 0;
@@ -67,9 +68,10 @@ body {
   border: solid black 1px;
   display: none;
 }
-.mylearning:hover .mylearning__popup{
+.mylearning:hover .mylearning__popup {
   display: block;
 }
+/*Course Categories*/
 .cat {
   display: flex;
   justify-content: space-around;
@@ -83,11 +85,12 @@ body {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+/*advertisement image*/
 .image img {
   width: 100%;
   position: relative;
 }
-.image__offersale{
+.image__offersale {
   position: absolute;
   width: 400px;
   height: 140px;
@@ -100,19 +103,22 @@ body {
   width: 100%;
   margin-top: 10px;
 }
-.image__offersale button{
- border: none;
- width: 90px;
- height: 30px;
- padding-left: 5px;
- padding-right: 5px;
- background-color: rgb(62, 65, 67);
- color: white;
- font-size: 15px;
+.image__offersale button {
+  border: none;
+  width: 90px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(62, 65, 67);
+  color: white;
+  font-size: 15px;
 }
-.image__offersale p,h2,button{
+.image__offersale p,
+h2,
+button {
   margin-bottom: 10px;
- }
+}
+/*Course Cards*/
 .course-card__container {
   display: flex;
   flex-direction: row;
@@ -120,7 +126,7 @@ body {
   justify-content: space-around;
   margin-top: 10px;
 }
-.course-card h1{
+.course-card h1 {
   padding-left: 10px;
 }
 .course-card__img {
@@ -154,6 +160,7 @@ body {
 .one:hover {
   color: rgb(164, 53, 240);
 }
+/*Course Topic*/
 .topic {
   padding: 10px;
 }
@@ -169,6 +176,7 @@ body {
   flex-basis: 25%;
   flex-grow: 1;
 }
+/*Popular Course Section*/
 .popular {
   width: 100%;
   margin-top: 10px;
@@ -201,7 +209,8 @@ body {
 .popular__course-info h3 {
   font-size: 22px;
 }
-.popular__title h1,p{
+.popular__title h1,
+p {
   padding-left: 10px;
 }
 .popular p {
@@ -210,6 +219,7 @@ body {
 .popular__course__img {
   flex-basis: 21%;
 }
+/*Footer section*/
 .footer {
   padding: 30px;
   background-color: black;
