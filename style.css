@@ -5,7 +5,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   width: 100%;
 }
@@ -55,6 +55,9 @@ body {
   background-color: white;
   cursor: pointer;
 }
+.one:hover {
+  color: rgb(164, 53, 240);
+}
 .mylearning {
   position: relative;
 }
@@ -68,6 +71,15 @@ body {
   border: solid black 1px;
   display: none;
 }
+.mylearning__popup button{
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  margin-top: 10px;
+  color:  rgb(164, 53, 240);
+ width: 100%;
+
+}
 .mylearning:hover .mylearning__popup {
   display: block;
 }
@@ -77,13 +89,24 @@ body {
   justify-content: space-around;
   margin-top: 10px;
   border-bottom: solid black 1px;
+  cursor: pointer;
+  
+}
+.cat p:hover{
+ transition: 1s;
+ background-color:rgb(194, 154, 220);
+ color: black;
+ border: solid rgb(164, 53, 240) 1px;
 }
 .cat p {
   background-color: rgb(164, 53, 240);
+  font-size: 16px;
   gap: 20px;
   padding: 5px;
+  color: black;
   border-radius: 10px;
   margin-bottom: 10px;
+  border: solid  rgb(164, 53, 240) 1px;
 }
 /*advertisement image*/
 .image img {
@@ -92,20 +115,27 @@ body {
 }
 .image__offersale {
   position: absolute;
-  width: 400px;
+  width: 350px;
   height: 140px;
   bottom: 250px;
   left: 100px;
   border: solid rgb(0, 0, 0) 2px;
   padding: 10px;
+  animation-name: imagescale;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
-.course-card {
-  width: 100%;
-  margin-top: 10px;
+@keyframes imagescale {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
 }
 .image__offersale button {
   border: none;
-  width: 90px;
+  width: 100%;
   height: 30px;
   padding-left: 5px;
   padding-right: 5px;
@@ -113,10 +143,14 @@ body {
   color: white;
   font-size: 15px;
 }
-.image__offersale p,
-h2,
-button {
+.image__offersale p, h2, button {
   margin-bottom: 10px;
+}
+.image__offersale button:hover{
+    background-color:  rgb(87, 91, 92);
+}
+.image__offersale p{
+  padding: 0;
 }
 /*Course Cards*/
 .course-card__container {
@@ -124,6 +158,10 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 10px;
+}
+.course-card {
+  width: 100%;
   margin-top: 10px;
 }
 .course-card h1 {
@@ -157,9 +195,7 @@ button {
 .course-card p {
   line-height: 2;
 }
-.one:hover {
-  color: rgb(164, 53, 240);
-}
+
 /*Course Topic*/
 .topic {
   padding: 10px;
