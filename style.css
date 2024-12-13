@@ -9,8 +9,8 @@ body {
   font-style: normal;
   width: 100%;
 }
-span{
-  color:rgb(164, 54, 241);
+span {
+  color: rgb(164, 54, 241);
 }
 /*Navigation Bar*/
 .nav {
@@ -47,10 +47,12 @@ span{
   gap: 10px;
   padding-right: 10px;
 }
-.cart,.user,.bell{
+.cart,
+.user,
+.bell {
   padding-left: 10px;
 }
-.menu{
+.menu {
   display: none;
 }
 .nav {
@@ -64,7 +66,9 @@ span{
   background-color: white;
   cursor: pointer;
 }
-.one:hover,.two:hover,.three:hover {
+.one:hover,
+.two:hover,
+.three:hover {
   color: rgb(164, 53, 240);
 }
 .mylearning {
@@ -175,7 +179,7 @@ button {
   width: 100%;
   margin-top: 10px;
 }
-.course-card h1{
+.course-card h1 {
   padding-left: 10px;
 }
 .course-card__img {
@@ -208,7 +212,7 @@ button {
   line-height: 2;
   padding: 0;
 }
-.par{
+.par {
   margin-left: 10px;
 }
 
@@ -260,7 +264,7 @@ button {
   margin-right: 10px;
   line-height: 2;
 }
-.popular__title h1{
+.popular__title h1 {
   padding-left: 10px;
 }
 .popular p {
@@ -294,11 +298,23 @@ button {
   body {
     font-size: 10px;
   }
+  .one {
+    display: none;
+  }
+  .nav__search input {
+    display: none;
+  }
+  .nav__search {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .image__offersale {
     left: 60px;
     top: 160px;
+  }
+  .two {
+    display: none;
   }
 }
 @media screen and (max-width: 900px) {
@@ -314,65 +330,39 @@ button {
     margin-bottom: 0;
   }
 }
-
 @media screen and (max-width: 750px) {
   .image__offersale {
     display: none;
   }
 }
-
 @media screen and (max-width: 600px) {
   .course-card__img {
     flex-grow: 1;
     flex-basis: 40%;
     margin-bottom: 5px;
   }
-}
-@media screen and (max-width:600px){
-  .popular__course__img{
+  .cat {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .popular__course__img {
     flex-grow: 1;
     flex-basis: 40%;
     margin-bottom: 5px;
   }
 }
-@media screen and (max-width:600px){
-  .cat{
+@media screen and (max-width: 1100px) {
+  .three {
     display: none;
   }
-  .menu{
-    display: block;
-  }
-
-}
-@media screen and (max-width:1200px){
-  .two{
+  .cart,
+  .bell,
+  .user {
     display: none;
   }
-
-}
-@media screen and (max-width:1100px){
-  .three{
-    display: none;
-  }
-  .cart,.bell,.user{
-    display: none;
-  }
-  .menu{
+  .menu {
     display: block;
   }
 }
-@media screen and (max-width:800px){
-  .one{
-    display: none;
-  }
-  .nav__search input{
-    display: none;
-  }
-  .nav__search {
-    width: 35%;
-  }
-  
-}
-
-
-
