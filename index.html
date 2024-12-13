@@ -32,30 +32,39 @@
         <input placeholder="Search for Anything!!" />
       </div>
       <div class="nav__icon">
-        <p class="one">Courses</p>
+        <p class="two">Courses</p>
         <div class="mylearning">
-          <p class="one">My Learning</p>
+          <p class="three">My Learning</p>
           <div class="mylearning__popup">
             <p>Your learning is empty</p>
             <button>Keep shopping</button>
           </div>
         </div>
+        <div class="cart">
         <i
           class="fa-sharp fa-solid fa-cart-shopping"
           style="color: #050505"
         ></i>
+      </div>
+        <div class="bell">
         <i class="fa-sharp fa-solid fa-bell" style="color: #000000"></i>
+      </div>
+      <div class="user">
         <i class="fa-sharp fa-solid fa-user" style="color: #000000"></i>
       </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
+    </div>
+      
     <!--Course Categories-->
     <div class="cat">
       <p>Development</p>
       <p>Business</p>
       <p>IT & Software</p>
       <p>Personal Development</p>
-      <p>Design</p>
-      <p>Marketing</p>
+      <p>Design</p>  
     </div>
     <!--advertisement image-->
     <div class="image">
@@ -64,21 +73,21 @@
         <h2>Skills that drive you forward</h2>
         <p>
           Technology and the world of work change fast with us, you’re faster.
-          Get the skills to achieve goals and stay competitive.
+         <span> Get the skills to achieve goals and stay competitive.</span>
         </p>
         <button>View Plans</button>
       </div>
     </div>
     <!--Course Cards-->
     <div class="course-card">
-      <h1 class="course-card__title">Recommended For You</h1>
-      <p>Pick the Best Fit</p>
+      <h1 class="course-card__title">Recommended For <span>You</span></h1>
+      <p class="par">Pick the <span>Best</span> Fit</p>
       <div class="course-card__container">
         <div class="course-card__img">
           <img src="./images/python.jpg" alt="python" />
           <div class="card__info">
             <h3>The Complete Python Programming Course...</h3>
-            <p>Jose Portilla</p>
+            <p><span>Jose Portilla</span></p>
             <p>4.7 ⭐⭐⭐⭐⭐ (1,549)</p>
             <p>₹3,499 <del>₹4000</del></p>
             <p class="seller">Bestseller</p>
@@ -88,7 +97,7 @@
           <img src="./images/java.jpg" alt="java" />
           <div class="card__info">
             <h3>Java Programming for Complete Beginners...</h3>
-            <p>Code IT</p>
+            <p><span>Code IT</span></p>
             <p>4.2 ⭐⭐⭐ (200)</p>
             <p>₹3,999 <del>₹4500</del></p>
           </div>
@@ -97,7 +106,7 @@
           <img src="./images/computer programming.jpg" alt="computer" />
           <div class="card__info">
             <h3>Introduction to computer Programming...</h3>
-            <p>Jose Portilla</p>
+            <p><span>Jose Portilla</span></p>
             <p>4.7 ⭐⭐⭐⭐⭐ (1,225)</p>
             <p>₹3,499 <del>₹4999</del></p>
             <p class="seller">Bestseller</p>
@@ -107,7 +116,7 @@
           <img src="./images/react.jpg" alt="react" />
           <div class="card__info">
             <h3>React-The Complete Guide 2024...</h3>
-            <p>Leo Trieu</p>
+            <p><span>Leo Trieu</span></p>
             <p>4.5 ⭐⭐⭐⭐ (741)</p>
             <p>₹2,499 <del>₹3000</del></p>
           </div>
@@ -116,7 +125,7 @@
     </div>
     <!--Course Topic-->
     <div class="topic">
-      <h1 class="topic__title">Topic Recommended for You</h1>
+      <h1 class="topic__title"><span>Topic </span>Recommended for You</h1>
       <div class="topic__list">
         <p>Web Development</p>
         <p>JavaScript</p>
@@ -132,15 +141,15 @@
     <!--Popular Course Section-->
     <div class="popular">
       <div class="popular__title">
-        <h1>Most Popular</h1>
-        <p>Pick the Best Fit</p>
+        <h1>Most Popular<span> Course</span></h1>
+        <p class="par">Pick the Best Fit</p>
       </div>
       <div class="popular__courses">
         <div class="popular__course__img">
           <img src="./images/htmlcss.jpg" alt="html" />
           <div class="popular__course-info">
             <h3>HTML and CSS for Beginners</h3>
-            <p>Edwin Diaz</p>
+            <p><span>Edwin Diaz</span></p>
             <p>4.5 ⭐⭐⭐⭐ (741)</p>
             <p>₹2,499</p>
             <p class="seller">Bestseller</p>
@@ -150,7 +159,7 @@
           <img src="./images/bootcamp.jpg" alt="bootcamp" />
           <div class="popular__course-info">
             <h3>The Complete 2024 Web Development Bootcamp</h3>
-            <p>Angela</p>
+            <p><span>Angela</span></p>
             <p>4.7 ⭐⭐⭐⭐⭐ (1,549)</p>
             <p>₹3,099</p>
           </div>
@@ -159,7 +168,7 @@
           <img src="./images/angular.jpg" alt="angular" />
           <div class="popular__course-info">
             <h3>Angular & NodeJS - The MEAN Stack Guide</h3>
-            <p>Maximilian Schwarzmüller</p>
+            <p><span>Maximilian Schwarzmüller</span></p>
             <p>4.2 ⭐⭐⭐ (200)</p>
             <p>₹3,999</p>
           </div>
@@ -168,7 +177,7 @@
           <img src="./images/java.jpg" alt="java" />
           <div class="popular__course-info">
             <h3>Java 17 Masterclass: Start Coding in 2024</h3>
-            <p>Tim Buchalka</p>
+            <p><span>Tim Buchalka</span></p>
             <p>4.6 ⭐⭐⭐⭐⭐ (125)</p>
             <p>₹3,999</p>
             <p class="seller">Bestseller</p>
@@ -178,7 +187,7 @@
           <img src="./images/js.jpg" alt="js" />
           <div class="popular__course-info">
             <h3>Master JavaScript from Basics to Advanced</h3>
-            <p>Qaifi Khan</p>
+            <p><span>Qaifi Khan</span></p>
             <p>4.3 ⭐⭐⭐⭐⭐ (1,225)</p>
             <p>₹2,299</p>
             <p class="seller">Bestseller</p>
@@ -188,7 +197,7 @@
           <img src="./images/ios.jpg" alt="ios" />
           <div class="popular__course-info">
             <h3>iOS Development Kickstart</h3>
-            <p>Anton Voroniuk</p>
+            <p><span>Anton Voroniuk</span></p>
             <p>4.6 ⭐⭐⭐⭐⭐ (2,225)</p>
             <p>₹1,999</p>
           </div>
@@ -197,7 +206,7 @@
           <img src="./images/java2.jpg" alt="java" />
           <div class="popular__course-info">
             <h3>Practice Java by Building Projects</h3>
-            <p>Jose Portilla</p>
+            <p><span>Jose Portilla</span></p>
             <p>4.2 ⭐⭐⭐⭐⭐ (825)</p>
             <p>₹2,499</p>
             <p class="seller">Bestseller</p>
@@ -207,7 +216,7 @@
           <img src="./images/angular2.jpg" alt="angular" />
           <div class="popular__course-info">
             <h3>Angular - The Complete Guide (2024 Edition)</h3>
-            <p>Anton</p>
+            <p><span>Anton</span></p>
             <p>4.7 ⭐⭐⭐⭐⭐ (3,255)</p>
             <p>₹3,499</p>
             <p class="seller">Bestseller</p>
@@ -234,8 +243,8 @@
         </div>
       </div>
       <div class="footer__two">
-        <h1>Udemy</h1>
-        <p>&copy; Udemy, Inc</p>
+        <h1><span>Udemy</h1>
+        <p><span>&copy; Udemy, Inc</p>
       </div>
     </div>
   </body>

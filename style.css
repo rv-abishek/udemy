@@ -9,6 +9,9 @@ body {
   font-style: normal;
   width: 100%;
 }
+span{
+  color:rgb(164, 54, 241);
+}
 /*Navigation Bar*/
 .nav {
   display: flex;
@@ -41,8 +44,14 @@ body {
 }
 .nav__icon {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   padding-right: 10px;
+}
+.cart,.user,.bell{
+  padding-left: 10px;
+}
+.menu{
+  display: none;
 }
 .nav {
   align-items: center;
@@ -55,7 +64,7 @@ body {
   background-color: white;
   cursor: pointer;
 }
-.one:hover {
+.one:hover,.two:hover,.three:hover {
   color: rgb(164, 53, 240);
 }
 .mylearning {
@@ -71,14 +80,13 @@ body {
   border: solid black 1px;
   display: none;
 }
-.mylearning__popup button{
+.mylearning__popup button {
   border: none;
   background-color: transparent;
   font-size: 15px;
   margin-top: 10px;
-  color:  rgb(164, 53, 240);
- width: 100%;
-
+  color: rgb(164, 53, 240);
+  width: 100%;
 }
 .mylearning:hover .mylearning__popup {
   display: block;
@@ -90,23 +98,23 @@ body {
   margin-top: 10px;
   border-bottom: solid black 1px;
   cursor: pointer;
-  
 }
-.cat p:hover{
- transition: 1s;
- background-color:rgb(194, 154, 220);
- color: black;
- border: solid rgb(164, 53, 240) 1px;
+.cat p:hover {
+  transition: 1s;
+  background-color: rgb(194, 154, 220);
+  color: black;
+  border: solid rgb(164, 53, 240) 1px;
 }
 .cat p {
-  background-color: rgb(164, 53, 240);
+  background-color: rgb(164, 54, 241);
   font-size: 16px;
   gap: 20px;
+  width: 60;
   padding: 5px;
   color: black;
   border-radius: 10px;
   margin-bottom: 10px;
-  border: solid  rgb(164, 53, 240) 1px;
+  border: solid rgb(164, 53, 240) 1px;
 }
 /*advertisement image*/
 .image img {
@@ -117,8 +125,8 @@ body {
   position: absolute;
   width: 350px;
   height: 140px;
-  bottom: 250px;
-  left: 100px;
+  bottom: 350px;
+  left: 150px;
   border: solid rgb(0, 0, 0) 2px;
   padding: 10px;
   animation-name: imagescale;
@@ -126,10 +134,10 @@ body {
   animation-fill-mode: forwards;
 }
 @keyframes imagescale {
-  0%{
+  0% {
     transform: scale(1);
   }
-  100%{
+  100% {
     transform: scale(1.1);
   }
 }
@@ -142,14 +150,17 @@ body {
   background-color: rgb(62, 65, 67);
   color: white;
   font-size: 15px;
+  cursor: pointer;
 }
-.image__offersale p, h2, button {
+.image__offersale p,
+h2,
+button {
   margin-bottom: 10px;
 }
-.image__offersale button:hover{
-    background-color:  rgb(87, 91, 92);
+.image__offersale button:hover {
+  background-color: rgb(87, 91, 92);
 }
-.image__offersale p{
+.image__offersale p {
   padding: 0;
 }
 /*Course Cards*/
@@ -164,19 +175,23 @@ body {
   width: 100%;
   margin-top: 10px;
 }
-.course-card h1 {
+.course-card h1{
   padding-left: 10px;
 }
 .course-card__img {
-  width: 300px;
-  border: solid rgb(209, 215, 220) 2px;
-  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: solid rgb(209, 215, 220) 3px;
+  border-radius: 6px;
 }
 .course-card__container img {
   width: 100%;
 }
 .course-card__img img {
-  border-radius: 2px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .card__info {
   margin-left: 10px;
@@ -189,11 +204,12 @@ body {
   display: inline;
   padding: 2px;
 }
-.card__info h3 {
-  font-size: 22px;
-}
 .course-card p {
   line-height: 2;
+  padding: 0;
+}
+.par{
+  margin-left: 10px;
 }
 
 /*Course Topic*/
@@ -225,16 +241,18 @@ body {
   justify-content: space-around;
 }
 .popular__course__img {
-  width: 300px;
-  border: solid rgb(209, 215, 220) 2px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  border: solid rgb(209, 215, 220) 3px;
+  border-radius: 6px;
+  margin: 5px;
 }
 .popular__courses img {
   width: 100%;
 }
 .popular__course__img img {
-  border-radius: 2px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .popular__course-info {
   margin-left: 10px;
@@ -242,11 +260,7 @@ body {
   margin-right: 10px;
   line-height: 2;
 }
-.popular__course-info h3 {
-  font-size: 22px;
-}
-.popular__title h1,
-p {
+.popular__title h1{
   padding-left: 10px;
 }
 .popular p {
@@ -274,3 +288,91 @@ p {
 .footer__one p {
   margin: 20px;
 }
+
+/* Media Queries*/
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .image__offersale {
+    left: 60px;
+    top: 160px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .image__offersale {
+    font-size: 13px;
+    width: 300px;
+    height: 125px;
+    padding-bottom: 10px;
+    left: 40px;
+    top: 150px;
+  }
+  .image__offersale button {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .image__offersale {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .course-card__img {
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width:600px){
+  .popular__course__img{
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width:600px){
+  .cat{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+
+}
+@media screen and (max-width:1200px){
+  .two{
+    display: none;
+  }
+
+}
+@media screen and (max-width:1100px){
+  .three{
+    display: none;
+  }
+  .cart,.bell,.user{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+@media screen and (max-width:800px){
+  .one{
+    display: none;
+  }
+  .nav__search input{
+    display: none;
+  }
+  .nav__search {
+    width: 35%;
+  }
+  
+}
+
+
+
